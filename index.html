@@ -12,55 +12,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="registration">
-    <div class="registration__visual">
-      <img class="registration__avatar" src="images/avatar.jpg" alt="">
-      <h1 class="registration__title">Nastavení účtu</h1>
-      <p class="registration__description">Stačí pár minut a tvůj chytrý náramek bude připraven.</p>
+<div class="registrace">
+  <div class="info">
+    <div class="obrazek">
+      <img src="images/avatar.jpg" alt="Moje foto">
     </div>
-    <div class="registration__form">
-
-      <form class="form">
-
-        <div class="form__flex">
-          <div class="form__field">
-            <label for="firstname">Jméno</label>
-            <input type="text" name="firstname" id="firstname">
-          </div>
-          <div class="form__field">
-            <label for="lastname">Příjmení</label>
-            <input type="text" name="lastname" id="lastname">
-          </div>
-        </div>
-
-        <div class="form__field">
-          <label for="dateofbirth">Datum narození</label>
-          <input type="date" name="dateofbirth" id="dateofbirth">
-        </div>
-
-        <div class="form__field">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email">
-        </div>
-
-        <div class="form__field">
-          <label for="phone">Telefon</label>
-          <input type="tel" name="phone" id="phone" placeholder="+420">
-        </div>
-
-        <div class="form__field form__field--checkbox">
-          <input type="checkbox" name="consent" id="consent">
-          <label for="consent">Souhlasím s <a href="#">obchodními podmínkami</a></label>
-        </div>
-
-        <div class="form__flex">
-          <button type="submit">Zaregistrovat</button>
-        </div>
-      </form>
-
+    <div class="motto">
+      <H1>Nastavení účtu</H1>
+      <p>Stačí pár minut a tvůj chytrý náramek bude připraven.</p>
     </div>
   </div>
+  <div class="formular">
+    <div class="formular__Jmeno">
+      <div class="formular__kolonka">
+        <label for="jmeno">Jméno</label>
+        <input type="text" name="jmeno" id="jmeno">
+      </div>
+        <div class="formular__kolonka">
+          <label for="prijmeni">Příjmení</label>
+          <input type="text" name="prijmeni" id="prijmeni">
+        </div>
+    </div>
+    <div class="formular__kolonka">
+      <label for="narozeni">Datum narození</label>
+      <input type="date" name="narozeni" id="narozeni">
+    </div>
+    <div class="formular__kolonka">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="formular__kolonka">
+      <label for="telefon">Telefon</label>
+      <input type="tel" name="telefon" id="telefon" placeholder="+420">
+    </div>
+    <div class="formular__souhlas">
+      <input type="checkbox" name="souhlas" id="souhlas">
+      <label for="souhlas">Souhlasím s <u>obchodními podmínkami</u></label>
+    </div>
+    <div class="formular__tlacitko">
+      <button type="submit">Zaregistrovat</button>
+    </div>
 
+  </div>
+</div>
 </body>
 </html>

@@ -12,114 +12,109 @@ html { box-sizing: border-box; }
   --field-radius: 4px;
   --radius: 12px;
 }
-
+/* 
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto; 
+  */
 body {
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  background: var(--page-bg-color);
-}
-
-
-.registration {
-  display: flex;
+  margin: 0 auto;
   width: 800px;
+  background-color: var(--page-bg-color);
 }
 
-.registration__visual {
-  flex: 0 0 300px;
-  padding: 60px;
-  background: linear-gradient(to top, var(--gradient-start), var(--gradient-end));
+.registrace {
+  display: flex;
+  
+}
+
+.info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 40%;
   text-align: center;
-  border-radius: var(--radius) 0 0 var(--radius);
+  padding: 100px 30px;
+  margin: 50px 0;
+  background-image: linear-gradient(var(--gradient-end), var(--gradient-start));
+  border-radius: 20px 0 0 20px;
 }
 
-.registration__form {
-  flex: 0 0 500px;
-  padding: 60px;
-  background: white;
-  border-radius: 0 var(--radius) var(--radius) 0;
-}
-
-.registration__avatar {
-  width: 150px;
-  border: 10px solid #ffffff60;
+img {
   border-radius: 50%;
+  width: 50%;
+  border: 10px solid var(--avatar-border-color)
 }
 
-.registration__title {
-  font-size: 1.4rem;
-  margin: 30px 0 10px 0;
+.motto h1 {
+  font-size: 1.5em;
 }
 
-.registration__description {
-  margin: 10px 0 0 0;
-  font-size: 0.85rem;
-  color: #000000c0;
+.formular {
+  width: 60%;
+  padding: 50px;
+  margin: 50px 0;
+  background: white;
+  border-radius: 0 20px 20px 0;
 }
 
-.form {
+.formular__Jmeno {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
-.form__flex {
-  display: flex;
-  gap: 20px;
+.formular__Jmeno .formular__kolonka {
+  flex-basis: calc((100%-15px) / 2);
+  
 }
 
-.form__field--checkbox {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.form__field label {
+.formular__kolonka label,
+.formular__kolonka input {
   display: block;
+}
+.formular__kolonka input {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1em;
+  border: 1px solid var(--field-border-color)
+
+}
+
+.formular label {
+  font-weight: bold;
   margin-bottom: 5px;
-  font-weight: 600;
 }
 
-.form__field input[type="text"],
-.form__field input[type="tel"],
-.form__field input[type="email"],
-.form__field input[type="date"] {
+.formular__souhlas {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.formular__souhlas input[type="checkbox"] {
+  width: 2em;
+  height: 2em;
+  accent-color: var(--field-border-color);
+  border-color: var(--field-border-color);
+}
+
+.formular__tlacitko button {
   width: 100%;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  padding: 10px;
-  border: 1px solid var(--field-border-color);
-  border-radius: var(--field-radius);
-}
-
-.form__field input[type="checkbox"] {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 1px solid var(--field-border-color);
-  border-radius: var(--field-radius);
-}
-
-.form__field a {
-  color: black;
-}
-
-button {
-  width: 100%;
-  font-family: "Inter", sans-serif;
-  font-size: 1rem;
-  padding: 10px;
-  border: 0;
+  padding: 10px 0;
   background: var(--button-color);
+  border: 0;
+  border-radius: 10px;
   color: white;
-  border-radius: var(--field-radius);
+  font-weight: bold;
+  font-size: 1.1em;
+  
 }
+
+
+
+
+
+
+
